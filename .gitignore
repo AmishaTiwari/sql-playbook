@@ -1,0 +1,27 @@
+# Python
+**pycache**/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Database Dumps
+*.sql.backup
+*.dump
+
+# Temporary Files
+*.tmp
+*.log
