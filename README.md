@@ -50,6 +50,48 @@ Each step produces a meaningful output (e.g., filtered data, aggregated tables, 
 
 ---
 
+## Dataset
+
+This playbook uses synthetic e-commerce data designed to practice SQL for data transformation, customer analysis, and ML feature engineering.
+
+### `customers`
+
+One row represents one customer.
+
+| Column | Description |
+|---|---|
+| `customer_id` | Unique identifier for each customer |
+| `name` | Customer name |
+| `age` | Customer age |
+| `country` | Customer's country |
+| `income` | Customer income; may be NULL |
+| `signup_date` | Date the customer signed up |
+| `last_login_date` | Date of the customer's most recent login |
+
+### `orders`
+
+One row represents one customer order.
+
+| Column | Description |
+|---|---|
+| `order_id` | Unique identifier for each order |
+| `customer_id` | Identifier linking the order to a customer |
+| `order_date` | Date the order was placed |
+| `order_amount` | Monetary value of the order |
+
+### Relationship
+
+- `customers.customer_id` uniquely identifies a customer.
+- `orders.customer_id` links an order to its customer.
+- One customer can have multiple orders.
+- Some customers have no orders.
+- A customer can therefore appear multiple times after joining with `orders`.
+- `income` can contain NULL values, allowing NULL-handling scenarios to be practiced.
+
+The datasets are synthetic and created solely for SQL practice and feature engineering exercises.
+
+---
+
 ## Additional components:
 
 - `datasets/`
