@@ -25,3 +25,6 @@ Thumbs.db
 # Temporary Files
 *.tmp
 *.log
+
+# Revision Files
+revision_queries.sql
